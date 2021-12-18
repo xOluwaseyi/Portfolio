@@ -1,0 +1,468 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: goldenrod;
+  background-color: black;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  margin-top: 30px;
+}
+
+#backtop {
+  background-color: goldenrod;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#backtop a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+#brand {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  display: inline-block;
+  color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: all 0.3s linear;
+}
+
+#brand:hover {
+  transform: scale(1.2, 1.2);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: goldenrod;
+  border-bottom: goldenrod solid 1px;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  transition: all 0.2s linear;
+}
+
+nav ul li a:hover {
+  transform: scale(1.15, 1.15);
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: goldenrod;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  background-color: goldenrod;
+  padding: 10px 13px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+#active {
+  background-color: goldenrod;
+  color: black;
+  border: goldenrod 2px solid;
+  border-radius: 30px;
+  padding: 8px;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: goldenrod;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:hover {
+  border: goldenrod 2px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: goldenrod;
+  border: 2px solid goldenrod;
+}
+
+.btn-top {
+  transition: all 0.2s linear;
+}
+
+.btn-top:hover {
+  transform: scale(1.09, 1.09);
+}
+
+#showcase {
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+#show-text {
+  width: auto;
+  position: absolute;
+  left: 5%;
+  transition: ease-in-out 0.5s;
+}
+
+#show-text:hover {
+  left: 9%;
+}
+
+#show-text p {
+  margin-bottom: 50px;
+  word-spacing: 2px;
+  line-height: 1.35;
+  font-size: 30px;
+  width: 40%;
+  font-weight: bolder;
+}
+
+#show-name {
+  color: white;
+  font-size: 40px;
+}
+
+#show-icons {
+  margin-top: 10px;
+}
+
+#show-img {
+  position: absolute;
+  right: 7%;
+  transition: all 0.5s ease-in-out;
+}
+
+#show-img img {
+  width: 380px;
+  height: 380px;
+  border-radius: 100%;
+
+  border: 10px goldenrod dotted;
+  padding: 10px;
+}
+
+#show-img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#skills-head {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+#skills-head #skillhead {
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.skills {
+  height: auto;
+  width: 100%;
+  border-top: goldenrod 1px solid;
+  border-bottom: goldenrod 1px solid;
+}
+
+#containercard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.contcard {
+  background-color: whitesmoke;
+  width: 250px;
+  margin: 20px;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.5s linear;
+}
+
+.contcard i {
+  padding: 10px;
+  font-size: 100px;
+  color: black;
+}
+
+.contothers {
+  padding: 50px 20px;
+  color: black;
+  line-height: 1.4;
+}
+
+.contcard:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.skills-img {
+  width: 70%;
+  height: auto;
+  padding: 20px;
+}
+
+.contcard #conttext {
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin: auto 0px;
+  text-align: center;
+  padding: 20px;
+}
+
+#footerp {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #brand {
+    font-size: 1.7rem;
+    font-weight: bolder;
+  }
+
+  .btn-top {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .nav-ul a {
+    border-bottom: goldenrod solid 1px;
+    border-width: 100%;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: goldenrod solid 5px;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    transition: all 0.5s linear;
+    margin-right: 10px;
+  }
+
+  #showcase {
+    height: 80vh;
+  }
+
+  #show-text {
+    width: auto;
+  }
+
+  #showcase p {
+    font-size: 25px;
+    width: 45%;
+  }
+
+  #show-name {
+    font-size: 30px;
+  }
+
+  #show-img {
+    right: 5%;
+  }
+  #show-img img {
+    width: 320px;
+    height: 320px;
+  }
+
+  #footerp {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #brand {
+    margin-left: 10px;
+  }
+
+  .btn-top {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .nav-ul a {
+    border-bottom: goldenrod solid 1px;
+    border-width: 100%;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: goldenrod solid 5px;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    transition: all 0.5s linear;
+    margin-right: 10px;
+  }
+
+  #showcase p {
+    font-size: 25px;
+    width: 40%;
+  }
+
+  #show-name {
+    font-size: 30px;
+  }
+
+  #show-text {
+    left: 8%;
+  }
+
+  #show-text p {
+    font-size: 25px;
+  }
+
+  #show-name {
+    font-size: 28px;
+  }
+
+  #show-img img {
+    width: 280px;
+    height: 280px;
+    right: 5%;
+  }
+
+  #containercard {
+    flex-direction: column;
+  }
+
+  .contcard {
+    width: 50%;
+    text-align: center;
+    width: 230px;
+  }
+
+  .contcard #conttext {
+    padding: 10px;
+  }
+
+  #footerp {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 723px) {
+  #showcase {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  #show-text {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin: 30px;
+    margin-top: 40px;
+    transition: ease-in-out 0.5s;
+  }
+
+  #show-text:hover {
+    left: 0;
+    transform: scale(1.1, 1.1);
+  }
+
+  #show-text p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  #show-img {
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin: 30px;
+  }
+}
