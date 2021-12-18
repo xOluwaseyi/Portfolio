@@ -320,7 +320,7 @@ footer {
   }
 
   #showcase {
-    height: 80vh;
+    height: 75vh;
   }
 
   #show-text {
@@ -381,6 +381,10 @@ footer {
     display: block;
     transition: all 0.5s linear;
     margin-right: 10px;
+  }
+
+  #showcase {
+    height: 75vh;
   }
 
   #showcase p {
@@ -454,9 +458,14 @@ footer {
   }
 
   #show-text p {
-    width: 80%;
+    width: 50%;
     margin: auto;
     margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  #show-name {
+    font-size: 22px;
   }
 
   #show-img {
@@ -464,5 +473,6 @@ footer {
     width: 100%;
     right: 0;
     margin: 30px;
+    margin-top: 40px;
   }
 }
