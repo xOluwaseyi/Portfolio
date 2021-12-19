@@ -21,12 +21,12 @@ body {
   height: 100vh;
   background-color: black;
   z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brand2 {
-  position: absolute;
-  top: 50%;
-  left: 45%;
   animation-name: loader;
   animation-duration: 2s;
   animation-iteration-count: infinite;
