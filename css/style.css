@@ -51,8 +51,7 @@ body {
 /* HEADER */
 
 header {
-  height: 100px;
-  display: flex;
+  margin-top: 30px;
 }
 
 nav {
@@ -229,7 +228,7 @@ nav ul li a:hover::after {
 .skills {
   height: auto;
   width: 100%;
-  /* border-top: goldenrod 1px solid; */
+
   border-bottom: goldenrod 4px solid;
 }
 
@@ -335,7 +334,7 @@ footer {
   }
 
   #showcase {
-    height: 75vh;
+    height: 80vh;
   }
 
   #show-text {

@@ -25,7 +25,7 @@ a {
 }
 
 .blog-box {
-  width: 27%;
+  width: 30%;
   background-color: #ffffff;
   border: 1px solid #ececec;
   margin: 15px 20px;
@@ -40,14 +40,14 @@ a {
 
 .blog-img {
   width: 100%;
-  height: 260px;
-  border-bottom: black 5px solid;
+  height: auto;
+  padding: 3px;
+  border-radius: 10px;
+  border-bottom: black 3px solid;
 }
 .blog-img img {
-  padding: 5px;
-  border-radius: 10px;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
