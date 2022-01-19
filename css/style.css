@@ -14,6 +14,7 @@ body {
   width: 100%;
 }
 
+/* LOADER */
 #loading {
   position: fixed;
   top: 0;
@@ -26,7 +27,7 @@ body {
   justify-content: center;
 }
 
-.brand2 {
+.brand-loader {
   animation-name: loader;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -37,7 +38,7 @@ body {
   0% {
     transform: scale(1);
   }
-  
+
   50% {
     transform: scale(1.5);
   }
@@ -47,27 +48,12 @@ body {
   }
 }
 
+/* HEADER */
 
 header {
-  margin-top: 30px;
-}
-
-#backtop {
-  background-color: goldenrod;
-  width: 10%;
+  height: 100px;
+  background-color: rgb(48, 48, 48);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: auto;
-  margin-top: 30px;
-}
-
-#backtop a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  padding: 10px;
 }
 
 nav {
@@ -109,7 +95,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: goldenrod;
-  border-bottom: goldenrod solid 1px;
+  /* border-bottom: goldenrod solid 1px; */
   font-weight: bold;
   font-size: 20px;
   display: inline-block;
@@ -132,7 +118,15 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+#active {
+  background-color: goldenrod;
+  color: black;
+  border: goldenrod 2px solid;
+  border-radius: 30px;
+  padding: 8px;
+}
 
+/* button */
 .btn {
   background-color: goldenrod;
   padding: 10px 13px;
@@ -142,29 +136,6 @@ nav ul li a:hover::after {
   font-size: 20px;
   border-radius: 30px;
   text-decoration: none;
-}
-
-#active {
-  background-color: goldenrod;
-  color: black;
-  border: goldenrod 2px solid;
-  border-radius: 30px;
-  padding: 8px;
-}
-
-.hamburger {
-  background-color: transparent;
-  border: 0;
-  color: goldenrod;
-  font-size: 25px;
-  cursor: pointer;
-  display: none;
-}
-
-.hamburger:hover {
-  border: goldenrod 2px solid;
-  padding: 5px;
-  border-radius: 5px;
 }
 
 .btn:hover {
@@ -181,6 +152,25 @@ nav ul li a:hover::after {
   transform: scale(1.09, 1.09);
 }
 
+/* button end */
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: goldenrod;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:hover {
+  border: goldenrod 2px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* showcase */
+
 #showcase {
   height: 90vh;
   display: flex;
@@ -189,6 +179,7 @@ nav ul li a:hover::after {
   align-items: center;
   position: relative;
   margin: auto;
+  border-bottom: goldenrod 4px solid;
 }
 
 #show-text {
@@ -199,38 +190,33 @@ nav ul li a:hover::after {
 }
 
 #show-text:hover {
-  left: 9%;
+  left: 7%;
 }
 
 #show-text p {
   margin-bottom: 50px;
   word-spacing: 2px;
-  line-height: 1.35;
+  line-height: 1.2;
   font-size: 30px;
-  width: 40%;
+  width: 50%;
   font-weight: bolder;
 }
 
 #show-name {
   color: white;
-  font-size: 40px;
-}
-
-#show-icons {
-  margin-top: 10px;
+  font-size: 45px;
 }
 
 #show-img {
   position: absolute;
-  right: 7%;
+  right: 10%;
   transition: all 0.5s ease-in-out;
 }
 
 #show-img img {
-  width: 380px;
-  height: 380px;
+  width: 390px;
+  height: 390px;
   border-radius: 100%;
-
   border: 10px goldenrod dotted;
   padding: 10px;
 }
@@ -239,27 +225,29 @@ nav ul li a:hover::after {
   transform: scale(1.1, 1.1);
 }
 
-#skills-head {
+/* skills */
+
+.skills {
+  height: auto;
+  width: 100%;
+  /* border-top: goldenrod 1px solid; */
+  border-bottom: goldenrod 4px solid;
+}
+
+.section-head {
   width: 60%;
   text-align: center;
   margin: auto;
 }
 
-#skills-head #skillhead {
+.section-text {
   padding-top: 30px;
   font-size: 30px;
   font-weight: bold;
   color: whitesmoke;
 }
 
-.skills {
-  height: auto;
-  width: 100%;
-  border-top: goldenrod 1px solid;
-  border-bottom: goldenrod 1px solid;
-}
-
-#containercard {
+.container-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -271,9 +259,13 @@ nav ul li a:hover::after {
   background-color: whitesmoke;
   width: 250px;
   margin: 20px;
-  border-radius: 30px;
+  border-radius: 10px;
   text-align: center;
   transition: all 0.5s linear;
+}
+
+.contcard:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .contcard i {
@@ -282,23 +274,13 @@ nav ul li a:hover::after {
   color: black;
 }
 
-.contothers {
-  padding: 50px 20px;
-  color: black;
-  line-height: 1.4;
-}
-
-.contcard:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.skills-img {
+.cont-img {
   width: 70%;
   height: auto;
   padding: 20px;
 }
 
-.contcard #conttext {
+.cont-text {
   color: black;
   text-align: center;
   font-weight: bolder;
@@ -448,7 +430,7 @@ footer {
     right: 5%;
   }
 
-  #containercard {
+  .container-card {
     flex-direction: column;
   }
 
@@ -458,7 +440,7 @@ footer {
     width: 230px;
   }
 
-  .contcard #conttext {
+  .conttext {
     padding: 10px;
   }
 

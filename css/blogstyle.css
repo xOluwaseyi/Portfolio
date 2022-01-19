@@ -5,18 +5,15 @@ a {
   text-decoration: none;
 }
 
-/*--blog--------------------------*/
-#portfolio {
+/*portfolio*/
+.portfolio {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid goldenrod;
+  border-bottom: 4px solid goldenrod;
 }
-
-
 
 .blog-container {
   display: flex;
@@ -28,7 +25,7 @@ a {
 }
 
 .blog-box {
-  width: 30%;
+  width: 27%;
   background-color: #ffffff;
   border: 1px solid #ececec;
   margin: 15px 20px;
@@ -37,18 +34,13 @@ a {
   overflow: hidden;
 }
 
-#portfolio #skills-head {
-
-  margin-bottom: 10px;
-}
 .blog-box:hover {
-    transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .blog-img {
-
   width: 100%;
-  height: auto;
+  height: 260px;
   border-bottom: black 5px solid;
 }
 .blog-img img {
@@ -60,13 +52,13 @@ a {
   object-position: center;
 }
 .blog-text {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.blog-text .blog-title {
-  font-size: 2rem;
+.blog-title {
+  font-size: 1.5rem;
   font-weight: bolder;
   color: red;
   text-align: center;
@@ -75,7 +67,7 @@ a {
   color: black;
   font-size: 1rem;
   font-weight: bolder;
-  margin: 20px 0px;
+  margin: 15px 0px;
   text-align: center;
 }
 
@@ -83,7 +75,6 @@ a {
   color: blue;
   transition: all ease 0.3s;
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .blog-box {
