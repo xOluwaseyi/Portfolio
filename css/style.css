@@ -10,7 +10,6 @@ body {
   background-color: black;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  height: 100vh;
   width: 100%;
 }
 
@@ -170,7 +169,7 @@ nav ul li a:hover::after {
 /* showcase */
 
 #showcase {
-  height: 90vh;
+  height: 550px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -181,7 +180,7 @@ nav ul li a:hover::after {
 }
 
 #show-text {
-  width: auto;
+  width: 50%;
   position: absolute;
   left: 5%;
   transition: ease-in-out 0.5s;
@@ -196,7 +195,7 @@ nav ul li a:hover::after {
   word-spacing: 2px;
   line-height: 1.2;
   font-size: 1.875em;
-  width: 50%;
+  width: 100%;
   font-weight: bolder;
 }
 
@@ -335,16 +334,16 @@ footer {
   }
 
   #showcase {
-    height: 80vh;
+    height: 600px;
   }
 
   #show-text {
-    width: auto;
+    width: 50%;
   }
 
   #showcase p {
     font-size: 1.56em;
-    width: 45%;
+    width: 100%;
   }
 
   #show-name {
@@ -399,7 +398,7 @@ footer {
   }
 
   #showcase {
-    height: 75vh;
+    height: 1000px;
   }
 
   #showcase p {
