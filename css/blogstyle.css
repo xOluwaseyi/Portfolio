@@ -11,7 +11,6 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* padding: 20px; */
   border-bottom: 4px solid goldenrod;
 }
 
@@ -60,14 +59,14 @@ a {
 }
 
 .blog-title {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bolder;
   color: red;
   text-align: center;
 }
 .blog-text p {
   color: black;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   margin: 5px 0px;
   text-align: center;
@@ -81,7 +80,7 @@ a {
   color: white;
   background-color: red;
   padding: 5px 10px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 

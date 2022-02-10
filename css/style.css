@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   color: goldenrod;
   background-color: black;
@@ -63,7 +67,7 @@ nav {
 }
 
 #brand {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   display: inline-block;
   color: aliceblue;
@@ -94,7 +98,7 @@ nav ul li a {
   color: goldenrod;
   /* border-bottom: goldenrod solid 1px; */
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.8rem;
   display: inline-block;
   transition: all 0.2s linear;
 }
@@ -130,7 +134,7 @@ nav ul li a:hover::after {
   outline: none;
   color: black;
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.6rem;
   border-radius: 30px;
   text-decoration: none;
 }
@@ -147,6 +151,10 @@ nav ul li a:hover::after {
 
 .btn-top:hover {
   transform: scale(1.09, 1.09);
+}
+
+.btn-bottom {
+  font-size: 1.5rem;
 }
 
 /* button end */
@@ -169,7 +177,7 @@ nav ul li a:hover::after {
 /* showcase */
 
 #showcase {
-  height: 550px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -180,7 +188,7 @@ nav ul li a:hover::after {
 }
 
 #show-text {
-  width: 50%;
+  width: 400px;
   position: absolute;
   left: 5%;
   transition: ease-in-out 0.5s;
@@ -193,26 +201,27 @@ nav ul li a:hover::after {
 #show-text p {
   margin-bottom: 50px;
   word-spacing: 2px;
-  line-height: 1.2;
-  font-size: 1.875em;
+  line-height: 1.4;
+  font-size: 2.5rem;
   width: 100%;
   font-weight: bolder;
 }
 
 #show-name {
   color: white;
-  font-size: 45px;
+  font-size: 3rem;
+  display: block;
 }
 
 #show-img {
   position: absolute;
-  right: 10%;
+  right: 7%;
   transition: all 0.5s ease-in-out;
 }
 
 #show-img img {
-  width: 390px;
-  height: 390px;
+  width: 350px;
+  height: 350px;
   border-radius: 100%;
   border: 10px goldenrod dotted;
   padding: 10px;
@@ -227,7 +236,6 @@ nav ul li a:hover::after {
 .skills {
   height: auto;
   width: 100%;
-
   border-bottom: goldenrod 4px solid;
 }
 
@@ -239,7 +247,7 @@ nav ul li a:hover::after {
 
 .section-text {
   padding-top: 30px;
-  font-size: 1.875em;
+  font-size: 2.4rem;
   font-weight: bold;
   color: whitesmoke;
 }
@@ -254,8 +262,8 @@ nav ul li a:hover::after {
 
 .contcard {
   background-color: whitesmoke;
-  width: 250px;
-  margin: 20px;
+  width: 200px;
+  margin: 10px;
   padding: 5px;
   border-radius: 10px;
   text-align: center;
@@ -268,7 +276,7 @@ nav ul li a:hover::after {
 
 .contcard i {
   padding: 10px;
-  font-size: 6.25em;
+  font-size: 7rem;
   color: black;
 }
 
@@ -280,9 +288,9 @@ nav ul li a:hover::after {
 
 .cont-text {
   color: black;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: bolder;
-
   margin-bottom: 10px;
 }
 
@@ -293,14 +301,14 @@ footer {
 }
 
 #footerp {
-  font-size: 1.25em;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 5px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #brand {
-    font-size: 1.7rem;
+    font-size: 3rem;
     font-weight: bolder;
   }
 
@@ -334,20 +342,20 @@ footer {
   }
 
   #showcase {
-    height: 600px;
+    height: 500px;
   }
 
   #show-text {
-    width: 50%;
+    width: 400px;
   }
 
   #showcase p {
-    font-size: 1.56em;
+    font-size: 2rem;
     width: 100%;
   }
 
   #show-name {
-    font-size: 1.875em;
+    font-size: 3rem;
   }
 
   #show-img {
@@ -356,10 +364,6 @@ footer {
   #show-img img {
     width: 320px;
     height: 320px;
-  }
-
-  #footerp {
-    font-size: 1.15em;
   }
 }
 
@@ -398,34 +402,35 @@ footer {
   }
 
   #showcase {
-    height: 1000px;
+    height: 500px;
   }
 
   #showcase p {
-    font-size: 1.56em;
-    width: 40%;
-  }
-
-  #show-name {
-    font-size: 1.875em;
+    font-size: 1.5rem;
   }
 
   #show-text {
     left: 8%;
+    width: 300px;
   }
 
   #show-text p {
-    font-size: 1.56em;
+    font-size: 1.5rem;
   }
 
   #show-name {
-    font-size: 1.75em;
+    font-size: 2.5rem;
   }
 
   #show-img img {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     right: 5%;
+    border: 8px dotted goldenrod;
+  }
+
+  #btn-bottom {
+    font-size: 1.3rem;
   }
 
   .container-card {
@@ -443,7 +448,7 @@ footer {
   }
 
   #footerp {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 
@@ -472,15 +477,14 @@ footer {
   }
 
   #show-text p {
-    width: 50%;
     margin: auto;
     line-height: 1.5;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   #show-name {
-    font-size: 22px;
+    font-size: 2.5rem;
   }
 
   #show-img {
@@ -489,9 +493,5 @@ footer {
     right: 0;
     margin: 30px;
     margin-top: 40px;
-  }
-
-  .text-mail {
-    font-size: 14px;
   }
 }
