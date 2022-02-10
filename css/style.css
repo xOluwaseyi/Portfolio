@@ -464,7 +464,7 @@ footer {
 
   #show-text {
     position: relative;
-    width: 100%;
+    width: 90vw;
     left: 0;
     margin: 30px;
     margin-top: 40px;
@@ -489,7 +489,7 @@ footer {
 
   #show-img {
     position: relative;
-    width: 100%;
+    width: 90vw;
     right: 0;
     margin: 30px;
     margin-top: 40px;
