@@ -19,7 +19,7 @@ timeline
   .from(".hamburger", { opacity: 0 })
   .from(".link", { opacity: 0, stagger: 0.5 })
   .from(".btn-top", { opacity: 0 })
-  .from("#showcase", { y: "-100vh", ease: "slow(0.7, 0.7, false)" }, 4);
+  .from("#showcase", { y: "-100vh", ease: "power2.inOut" }, 4);
 
 // .from(".link", { opacity: 0, stagger: 0.5 })
 // .from(".right", { x: "-100vw", ease: "power2.in" }, 1)
