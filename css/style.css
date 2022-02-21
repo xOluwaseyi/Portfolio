@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 html {
   font-size: 62.5%;
 }
@@ -96,7 +100,6 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: goldenrod;
-  /* border-bottom: goldenrod solid 1px; */
   font-weight: bold;
   font-size: 1.8rem;
   display: inline-block;
@@ -231,14 +234,6 @@ nav ul li a:hover::after {
   transform: scale(1.1, 1.1);
 }
 
-/* skills */
-
-.skills {
-  height: auto;
-  width: 100%;
-  border-bottom: goldenrod 4px solid;
-}
-
 .section-head {
   width: 60%;
   text-align: center;
@@ -246,53 +241,91 @@ nav ul li a:hover::after {
 }
 
 .section-text {
-  padding-top: 30px;
-  font-size: 2.4rem;
+  padding-top: 25px;
+  font-size: 2.2rem;
   font-weight: bold;
   color: whitesmoke;
 }
 
-.container-card {
+/* skills */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  border-bottom: goldenrod 4px solid;
+}
+
+.skills-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
   align-items: center;
   margin: 10px 0px;
 }
 
-.contcard {
+.skillcard {
+  display: grid;
+  place-items: center;
   background-color: whitesmoke;
-  width: 200px;
-  margin: 10px;
-  padding: 5px;
-  border-radius: 10px;
-  text-align: center;
+  height: 170px;
+  width: 170px;
+  margin: 10px 13px;
   transition: all 0.5s linear;
 }
 
-.contcard:hover {
+.skillcard:hover {
   transform: scale(1.1, 1.1);
 }
 
-.contcard i {
-  padding: 10px;
-  font-size: 7rem;
-  color: black;
-}
-
-.cont-img {
-  width: 70%;
+.skill-img {
+  width: 80%;
   height: auto;
   padding: 20px;
 }
 
-.cont-text {
-  color: black;
-  font-size: 1.2rem;
+/* contact */
+
+#contact {
   text-align: center;
-  font-weight: bolder;
-  margin-bottom: 10px;
+  height: auto;
+  border-bottom: 3px solid goldenrod;
 }
+
+#contact h4 {
+  font-size: 1.1rem;
+}
+
+.contact-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  margin: 15px 0;
+}
+
+.cont-card {
+  display: grid;
+  place-items: center;
+  width: 180px;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  height: 150px;
+  border: white 2px solid;
+}
+
+.contact-cards i {
+  font-size: 7rem;
+  padding: 10px;
+}
+
+/* footer */
 
 footer {
   margin: auto 0px;
@@ -431,20 +464,6 @@ footer {
 
   #btn-bottom {
     font-size: 1.3rem;
-  }
-
-  .container-card {
-    flex-direction: column;
-  }
-
-  .contcard {
-    width: 50%;
-    text-align: center;
-    width: 230px;
-  }
-
-  .conttext {
-    padding: 10px;
   }
 
   #footerp {
