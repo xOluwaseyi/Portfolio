@@ -313,9 +313,9 @@ nav ul li a:hover::after {
 .cont-card {
   display: grid;
   place-items: center;
-  width: 180px;
+  width: 200px;
   margin: 10px 20px;
-  padding: 10px 20px;
+  padding: 10px;
   height: 150px;
   border: white 2px solid;
 }
