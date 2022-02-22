@@ -1,8 +1,11 @@
-# Portfolio
-This is my official portfolio ⚡
+# 💼 My Portfolio Website
 
-It was made with HTML, CSS and just about 5 lines of Javascript 🦿🦾
+⚡ This is my official portfolio 
 
-I am currently open to junior frontend engineer roles 👨🏽‍💻
+🦿🦾 It was made with HTML, CSS and just about some lines of JavaScript and GSAP
 
-You can contact me here twitter.com/devoluwaseyi 📬
+👨🏽‍💻 I am currently open to junior frontend developer/engineer roles
+
+📝 My [resume](https://drive.google.com/file/d/1gVXNnast6FCzrLjpUMbWJVgHs3LxFW9K/view?usp=drivesdk)
+
+📬 You can contact me here **seyifagbemi211@gmail.com**
