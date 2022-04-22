@@ -78,10 +78,14 @@ a {
 
 .port-link {
   color: white;
-  background-color: red;
+  background-color: black;
   padding: 5px 10px;
   font-size: 1.1rem;
   font-weight: bold;
+}
+
+.port-link:hover {
+  background-color: rgb(71, 69, 69);
 }
 
 @media screen and (max-width: 910px) {

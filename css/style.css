@@ -318,11 +318,16 @@ nav ul li a:hover::after {
   padding: 10px;
   height: 150px;
   border: white 2px solid;
+  transition: all 0.5s linear;
 }
 
 .contact-cards i {
   font-size: 7rem;
   padding: 10px;
+}
+
+.cont-card:hover {
+  transform: scale(1.1, 1.1);
 }
 
 /* footer */
