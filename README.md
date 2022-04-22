@@ -6,6 +6,6 @@
 
 👨🏽‍💻 I am currently open to junior frontend developer/engineer roles
 
-📝 My [resume](https://drive.google.com/file/d/1gVXNnast6FCzrLjpUMbWJVgHs3LxFW9K/view?usp=drivesdk)
+📝 My [resume](https://drive.google.com/file/d/13bjE6hComO1Dx3S5ACmFPb73yxCH241g/view?usp=drivesdk)
 
 📬 You can contact me here **seyifagbemi211@gmail.com**
