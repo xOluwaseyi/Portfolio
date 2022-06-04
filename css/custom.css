@@ -1,0 +1,92 @@
+.port-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px 0px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 95%;
+}
+
+.port-box {
+  width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin: 7px 7px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.port-box:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.port-img {
+  width: 100%;
+  height: auto;
+  padding: 3px;
+  border-bottom: 2px solid red;
+}
+.port-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.port-text {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.port-title {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: red;
+  text-align: center;
+}
+.port-text p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 5px 0px;
+  text-align: center;
+}
+
+.port-div {
+  margin-bottom: 15px;
+}
+
+.port-link {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.port-link:hover {
+  background-color: rgb(71, 69, 69);
+}
+
+@media screen and (max-width: 910px) {
+  .port-container {
+    width: 100%;
+  }
+  .port-title {
+    font-size: 1.6rem;
+  }
+
+  .port-text p {
+    font-size: 1rem;
+  }
+
+  .port-box {
+    margin: 10px 0;
+  }
+}
