@@ -221,7 +221,7 @@ main {
 
 .mp_text-btn {
   font-size: 1.5rem;
-  background-color: gold;
+  background-color: goldenrod;
   padding: 10px;
   color: black;
   margin-top: 10px;
@@ -229,11 +229,14 @@ main {
   text-align: center;
   font-weight: bold;
   border-radius: 20px;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 
 .mp_text-btn:hover {
   transform: scale(1.1, 1.1);
+  background-color: transparent;
+  border: 2px solid goldenrod;
+  color: goldenrod;
 }
 
 @media screen and (max-width: 960px) {
@@ -264,7 +267,6 @@ main {
     width: 80%;
     text-align: center;
     margin: 15px 0;
-    /* margin-bottom: 10px; */
     align-items: center;
   }
 
@@ -279,7 +281,6 @@ main {
 
 /* general */
 .portfolio,
-.job-exp,
 .skills,
 .contact {
   display: flex;
@@ -294,7 +295,6 @@ main {
 }
 
 .portfolio h1,
-.job-exp h1,
 .skills h1,
 .contact h1 {
   margin-bottom: 20px;
@@ -302,70 +302,25 @@ main {
   border-bottom: 3px solid red;
 }
 
-/* job experience */
-.job-exp__cards {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.je__cards--card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 20%;
-  padding: 20px;
-  background-color: white;
-  color: black;
-  height: 150px;
-}
-
-.je__cards--card h2 {
-  width: 40%;
-  margin: 10px;
-}
-
-.je__cards--card p:last-child {
-  font-size: 1.5rem;
-  background-color: rgb(155, 252, 155);
-  color: green;
-  border: green 1px solid;
-  padding: 10px;
-  border-radius: 30px;
-}
-
-@media screen and (max-width: 700px) {
-  .je__cards--card {
-    flex-direction: column;
-    width: 85%;
-    padding: 30px;
-    margin: 10px 0;
-    height: 180px;
-  }
-}
-
 /* skills */
 
 .skills-card {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  justify-content: space-evenly;
+  width: 90%;
+  justify-content: center;
   align-items: center;
-  margin: 10px 0px;
 }
 
 .skillcard {
   display: grid;
   place-items: center;
   background-color: whitesmoke;
-  height: 170px;
-  width: 170px;
-  margin: 10px 13px;
+  border-radius: 100%;
+  padding: 25px;
+  margin: 10px;
   transition: all 0.5s linear;
+  overflow: hidden;
 }
 
 .skillcard:hover {
@@ -373,9 +328,7 @@ main {
 }
 
 .skill-img {
-  width: 80%;
-  height: auto;
-  padding: 20px;
+  height: 100px;
 }
 
 @media screen and (max-width: 560px) {
@@ -390,53 +343,55 @@ main {
   }
 }
 
-/* contact */
-
-.contact-cards {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  color: white;
-  margin: 10px 0;
-}
-
-.cont-card {
-  height: 150px;
-  display: grid;
-  place-items: center;
-  margin: 10px 20px;
-  padding: 20px;
-  border: white 2px solid;
-  transition: all 0.5s linear;
-}
-
-.contact-cards i {
-  font-size: 7rem;
-  padding: 10px;
-}
-
-.cont-card:hover {
-  transform: scale(1.1, 1.1);
-}
-
 /* footer */
 
 footer {
   margin: auto 0px;
-  text-align: center;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #footerp {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   padding: 5px;
 }
 
 #footerp a {
   text-decoration: underline;
+}
+
+/* contact */
+
+.contact-cards {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 5px;
+}
+
+.cont-card {
+  border-radius: 100%;
+  border: white 2px solid;
+  display: grid;
+  place-items: center;
+  margin: 0 5px;
+}
+
+.contact-cards i {
+  padding: 13px;
+  font-size: 1.3rem;
+}
+
+.cont-card:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1, 1.1);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -511,5 +466,10 @@ footer {
 
   #footerp {
     font-size: 1.5rem;
+  }
+
+  .contact-cards i {
+    padding: 8px;
+    font-size: 1rem;
   }
 }
