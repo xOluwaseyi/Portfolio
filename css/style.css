@@ -313,9 +313,10 @@ main {
 }
 
 .skillcard {
-  display: grid;
-  place-items: center;
-  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   border-radius: 100%;
   padding: 25px;
   margin: 10px;
@@ -337,9 +338,13 @@ main {
   }
 
   .skillcard {
-    margin: 8px 10px;
-    height: 150px;
-    width: 150px;
+    margin: 8px 5px;
+    height: 90px;
+    width: 90px;
+  }
+
+  .skill-img {
+    height: 50px;
   }
 }
 
@@ -385,7 +390,7 @@ footer {
 
 .contact-cards i {
   padding: 13px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .cont-card:hover {
@@ -470,6 +475,6 @@ footer {
 
   .contact-cards i {
     padding: 8px;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
