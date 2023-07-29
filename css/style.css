@@ -159,6 +159,8 @@ nav ul li a:hover::after {
   transform: scale(1.09, 1.09);
 }
 
+
+
 /* button end */
 
 .hamburger {
@@ -220,23 +222,7 @@ main {
 }
 
 .mp_text-btn {
-  font-size: 1.5rem;
-  background-color: goldenrod;
-  padding: 10px;
-  color: black;
-  margin-top: 10px;
-  width: 150px;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 20px;
-  transition: all 0.2s linear;
-}
-
-.mp_text-btn:hover {
-  transform: scale(1.1, 1.1);
-  background-color: transparent;
-  border: 2px solid goldenrod;
-  color: goldenrod;
+  display: none;
 }
 
 @media screen and (max-width: 960px) {
@@ -251,6 +237,27 @@ main {
 
   .main__page--text h1 {
     font-size: 3rem;
+  }
+
+  .mp_text-btn {
+    display: block;
+    font-size: 1.5rem;
+    background-color: goldenrod;
+    padding: 10px;
+    color: black;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+  }
+  
+  .mp_text-btn:hover {
+    transform: scale(1.1, 1.1);
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    color: goldenrod;
   }
 }
 
