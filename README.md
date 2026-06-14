@@ -1,9 +1,24 @@
-# 💼 My Portfolio Website
+# 💼 Oluwaseyi Fagbemi — Portfolio
 
-⚡ This is my official portfolio.
+⚡ My personal portfolio, rebuilt with **Next.js**, **TypeScript** and **Tailwind CSS**.
 
-👨🏽‍💻 I am currently open to frontend developer/engineer roles.
+👨🏽‍💻 I'm a Frontend Developer, currently building at DeCentral Hub (UK), and open to new opportunities.
 
-📝 This is my [resume.](https://drive.google.com/file/d/1rD2vdZAme4IW4joca_3mbx0kC8xu2Aw6/view?usp=sharing)
+📬 You can reach me at **seyifagbemi211@gmail.com**.
 
-📬 You can contact me here **seyifagbemi211@gmail.com**.
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it locally.
+
+## Stack
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) for animation
+- [React Icons](https://react-icons.github.io/react-icons/)
