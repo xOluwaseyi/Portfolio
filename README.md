@@ -2,7 +2,7 @@
 
 ⚡ My personal portfolio, rebuilt with **Next.js**, **TypeScript** and **Tailwind CSS**.
 
-👨🏽‍💻 I'm a Frontend Developer, currently building at DeCentral Hub (UK), and open to new opportunities.
+👨🏽‍💻 I'm a Frontend Developer and open to new opportunities.
 
 📬 You can reach me at **seyifagbemi211@gmail.com**.
 
