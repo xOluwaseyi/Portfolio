@@ -4,8 +4,7 @@ export const site = {
   lastName: "Fagbemi",
   role: "Frontend Developer",
   tagline:
-    "I build fast, accessible and polished web experiences — turning designs into interfaces people enjoy using.",
-  location: "Nigeria",
+    "I build fast, accessible and polished web experiences, turning designs into interfaces people enjoy using.",
   email: "seyifagbemi211@gmail.com",
   github: "https://github.com/xoluwaseyi",
   linkedin: "https://www.linkedin.com/in/oluwaseyifagbemi",

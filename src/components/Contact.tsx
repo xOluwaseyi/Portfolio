@@ -73,7 +73,7 @@ export default function Contact() {
             custom={0.1}
             className="mx-auto mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
           >
-            Open to new opportunities — let&apos;s build something good together.
+            Open to new opportunities. Let&apos;s build something good together.
           </motion.h2>
 
           <motion.p
@@ -85,7 +85,7 @@ export default function Contact() {
             className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted"
           >
             Whether it&apos;s a frontend role, a freelance project, or just a
-            chat about building better interfaces — my inbox is open.
+            chat about building better interfaces. My inbox is open.
           </motion.p>
 
           <motion.div
@@ -140,7 +140,7 @@ export default function Contact() {
               Oluwaseyi Fagbemi
             </a>
           </p>
-          <p>&copy; {new Date().getFullYear()} · {site.location}</p>
+          <p>&copy; {new Date().getFullYear()}</p>
         </div>
       </div>
     </footer>

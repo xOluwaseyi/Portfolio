@@ -24,7 +24,7 @@ export default function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Where I've been building"
-          description="A timeline of the teams, internships and projects that have shaped how I work — from my first freelance gig in 2021 to where I am today."
+          description="A timeline of the teams, internships and projects that have shaped how I work, from my first freelance gig in 2021 to where I am today."
         />
 
         <div className="relative mt-14">
@@ -67,7 +67,7 @@ export default function Experience() {
 
                     <div className="flex flex-col items-end gap-2">
                       <span className="whitespace-nowrap rounded-full border border-border px-3 py-1 font-mono text-xs text-muted">
-                        {entry.start} — {entry.end}
+                        {entry.start} - {entry.end}
                       </span>
                       {entry.badge && (
                         <span className="rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent">
@@ -88,6 +88,19 @@ export default function Experience() {
                       </li>
                     ))}
                   </ul>
+
+                  {entry.stack && entry.stack.length > 0 && (
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {entry.stack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-full border border-border px-2.5 py-1 text-xs text-muted"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
                   {entry.link && (
                     <a

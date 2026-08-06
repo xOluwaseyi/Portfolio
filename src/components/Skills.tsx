@@ -3,12 +3,9 @@
 import { motion } from "framer-motion";
 import type { IconType } from "react-icons";
 import {
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
-  SiCss,
   SiReact,
   SiNextdotjs,
+  SiTypescript,
   SiRedux,
   SiZod,
   SiTailwindcss,
@@ -23,15 +20,12 @@ import {
 } from "react-icons/si";
 import { FaCubes } from "react-icons/fa6";
 import SectionHeading from "./SectionHeading";
-import { skillGroups } from "@/data/skills";
+import { skills } from "@/data/skills";
 
 const iconMap: Record<string, IconType> = {
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
-  SiCss,
   SiReact,
   SiNextdotjs,
+  SiTypescript,
   SiRedux,
   SiZod,
   SiTailwindcss,
@@ -64,39 +58,28 @@ export default function Skills() {
         <SectionHeading
           eyebrow="Stack & Tools"
           title="What I build with"
-          description="The languages, frameworks and tools I reach for most — picked up across freelance work, internships, hackathons and full-time roles."
+          description="The frameworks and tools I reach for most, picked up across freelance work, internships, hackathons and full-time roles."
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {skillGroups.map((group, gi) => (
-            <motion.div
-              key={group.label}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
-              custom={gi * 0.08}
-            >
-              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
-                {group.label}
-              </h3>
-              <ul className="mt-4 space-y-2.5">
-                {group.items.map((item) => {
-                  const Icon = iconMap[item.icon] ?? FaCubes;
-                  return (
-                    <li
-                      key={item.name}
-                      className="flex items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 text-sm text-foreground transition-colors hover:border-accent/40"
-                    >
-                      <Icon className="text-accent" size={16} />
-                      {item.name}
-                    </li>
-                  );
-                })}
-              </ul>
-            </motion.div>
-          ))}
-        </div>
+        <ul className="mt-14 flex flex-wrap gap-3">
+          {skills.map((item, i) => {
+            const Icon = iconMap[item.icon] ?? FaCubes;
+            return (
+              <motion.li
+                key={item.name}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-60px" }}
+                custom={i * 0.03}
+                className="flex items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 text-sm text-foreground transition-colors hover:border-accent/40"
+              >
+                <Icon className="text-accent" size={16} />
+                {item.name}
+              </motion.li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );

@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 
 const paragraphs = [
-  "I wrote my first lines of production frontend code in late 2021, refurbishing a company website as a freelancer — and I've been chasing that feeling of watching a design come alive in the browser ever since. Since then I've gone from intern to hackathon finalist to full-time engineer, working with teams across Nigeria and, more recently, the UK.",
-  "Alongside the code, I'm completing a degree in English at the University of Ilorin (2022–2026) — a combination that's sharpened how I communicate, document and collaborate with designers, backend engineers and product teams, not just how I write components.",
-  "These days I care about the small things that make an interface feel right — performance, accessibility, motion that earns its keep — and about being someone a team can hand a Figma file to and trust to ship something solid, end to end.",
+  "Frontend Developer with 4+ years of experience turning designs into interactive, accessible web experiences, both independently and as part of a team.",
+  "I care about the small details that make an interface feel right, communicate clearly with designers and engineers, and enjoy picking up new tools as projects call for them.",
 ];
+
+const cta = "Open to new opportunities. Let's connect.";
 
 const stats = [
   { value: "4+ yrs", label: "Writing frontend code, from freelance gigs to full-time roles" },
   { value: "6", label: "Teams collaborated with across startups, internships & hackathons" },
-  { value: "2×", label: "Finalist — HNG Internship and Gen Z Hackathon" },
-  { value: "2 crafts", label: "Balancing a degree in English with a career in frontend development" },
+  { value: "2×", label: "Finalist · HNG Internship and Gen Z Hackathon" },
 ];
 
 const fadeUp = {
@@ -38,7 +38,7 @@ export default function About() {
           <div className="space-y-5">
             {paragraphs.map((text, i) => (
               <motion.p
-                key={i}
+                key={text}
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
@@ -49,6 +49,17 @@ export default function About() {
                 {text}
               </motion.p>
             ))}
+
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              custom={0.3}
+              className="text-base font-medium text-foreground sm:text-lg"
+            >
+              {cta}
+            </motion.p>
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:gap-5">

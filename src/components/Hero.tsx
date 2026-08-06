@@ -59,7 +59,7 @@ export default function Hero() {
             custom={0.1}
             className="mt-4 text-4xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           >
-            Oluwaseyi Fagbemi —{" "}
+            Oluwaseyi Fagbemi,{" "}
             <span className="text-gradient">Frontend Developer</span> crafting
             interfaces people enjoy using.
           </motion.h1>
@@ -72,7 +72,7 @@ export default function Hero() {
             className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
           >
             {site.tagline} I have a track record across React, Next.js and
-            TypeScript products — from translating Figma designs into
+            TypeScript products, from translating Figma designs into
             production UI to integrating APIs and shipping features teams
             actually rely on.
           </motion.p>
@@ -139,8 +139,6 @@ export default function Hero() {
             >
               <FaPenNib size={20} />
             </a>
-            <span className="h-4 w-px bg-border" />
-            <span className="text-sm">{site.location}</span>
           </motion.div>
         </div>
 
@@ -163,10 +161,10 @@ export default function Hero() {
           </div>
           <div className="absolute -bottom-6 -left-6 rounded-2xl border border-border bg-surface/90 px-5 py-4 backdrop-blur-md">
             <p className="text-xs uppercase tracking-[0.2em] text-muted">
-              Based in
+              Status
             </p>
             <p className="mt-1 text-sm font-semibold text-foreground">
-              {site.location} · open to new roles
+              Open to new opportunities
             </p>
           </div>
         </motion.div>
