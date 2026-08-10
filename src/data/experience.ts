@@ -13,12 +13,12 @@ export interface ExperienceEntry {
 export const experience: ExperienceEntry[] = [
   {
     company: "DeCentral Hub",
-    role: "Frontend Developer",
+    role: "Frontend Developer · Part-time",
     start: "Sep 2025",
     end: "Present",
     badge: "Current",
     highlights: [
-      "Lead frontend developer across client projects including a food-delivery admin dashboard and a Web3 payments developer portal, built with Next.js, React and TypeScript.",
+      "Lead frontend developer across client projects including a food-delivery admin dashboard and a payments developer portal, built with Next.js, React and TypeScript.",
       "Built the developer portal's API key management, webhooks and billing from scratch.",
       "Built sandbox testing, transaction history and request logs.",
       "Extracted a major feature area from a production monorepo into its own standalone app, with zero disruption.",

@@ -10,12 +10,6 @@ const paragraphs = [
 
 const cta = "Open to new opportunities. Let's connect.";
 
-const stats = [
-  { value: "4+ yrs", label: "Writing frontend code, from freelance gigs to full-time roles" },
-  { value: "6", label: "Teams collaborated with across startups, internships & hackathons" },
-  { value: "2×", label: "Finalist · HNG Internship and Gen Z Hackathon" },
-];
-
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   visible: (delay = 0) => ({
@@ -34,54 +28,31 @@ export default function About() {
           title="A bit about my journey so far"
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-14 lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="space-y-5">
-            {paragraphs.map((text, i) => (
-              <motion.p
-                key={text}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-80px" }}
-                custom={i * 0.1}
-                className="text-base leading-relaxed text-muted sm:text-lg"
-              >
-                {text}
-              </motion.p>
-            ))}
-
+        <div className="mt-12 space-y-5">
+          {paragraphs.map((text, i) => (
             <motion.p
+              key={text}
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              custom={0.3}
-              className="text-base font-medium text-foreground sm:text-lg"
+              custom={i * 0.1}
+              className="text-base leading-relaxed text-muted sm:text-lg"
             >
-              {cta}
+              {text}
             </motion.p>
-          </div>
+          ))}
 
-          <div className="grid grid-cols-2 gap-4 sm:gap-5">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-80px" }}
-                custom={i * 0.08}
-                className="rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-accent/40"
-              >
-                <p className="text-2xl font-semibold text-gradient sm:text-3xl">
-                  {stat.value}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            custom={0.3}
+            className="text-base font-medium text-foreground sm:text-lg"
+          >
+            {cta}
+          </motion.p>
         </div>
       </div>
     </section>

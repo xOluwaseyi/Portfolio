@@ -1,10 +1,12 @@
-# 💼 Oluwaseyi Fagbemi — Portfolio
+# 💼 Oluwaseyi Fagbemi · Portfolio
 
-⚡ My personal portfolio, rebuilt with **Next.js**, **TypeScript** and **Tailwind CSS**.
+⚡ My personal portfolio, built with **Next.js**, **TypeScript** and **Tailwind CSS**.
 
-👨🏽‍💻 I'm a Frontend Developer and open to new opportunities.
+🌐 Live at [seyifagbemi.me](https://seyifagbemi.me)
 
-📬 You can reach me at **seyifagbemi211@gmail.com**.
+👨🏽‍💻 I'm a Frontend Developer, open to new opportunities.
+
+📬 Reach me at **seyifagbemi211@gmail.com**.
 
 ## Getting started
 
@@ -22,3 +24,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it locally.
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/) for animation
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [Vercel Analytics](https://vercel.com/analytics)
