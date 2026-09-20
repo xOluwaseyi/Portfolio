@@ -109,7 +109,7 @@ export default function Experience() {
                       rel="noopener noreferrer"
                       className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent-strong"
                     >
-                      Visit {entry.company.split(" ")[0].split("·")[0].trim()}
+                      {entry.linkLabel ?? `Visit ${entry.company.split(" ")[0].split("·")[0].trim()}`}
                       <FaArrowUpRightFromSquare size={12} />
                     </a>
                   )}

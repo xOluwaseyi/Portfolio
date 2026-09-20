@@ -5,6 +5,7 @@ export interface ExperienceEntry {
   end: string;
   location?: string;
   link?: string;
+  linkLabel?: string;
   badge?: string;
   highlights: string[];
   stack?: string[];
@@ -13,12 +14,12 @@ export interface ExperienceEntry {
 export const experience: ExperienceEntry[] = [
   {
     company: "DeCentral Hub",
-    role: "Frontend Developer · Part-time",
+    role: "Frontend Engineer · Part-time",
     start: "Sep 2025",
     end: "Present",
     badge: "Current",
     highlights: [
-      "Lead frontend developer across client projects including a food-delivery admin dashboard and a payments developer portal, built with Next.js, React and TypeScript.",
+      "Lead frontend developer across client projects including a food-delivery admin dashboard and a Web3 payments developer portal, built with Next.js, React and TypeScript.",
       "Built the developer portal's API key management, webhooks and billing from scratch.",
       "Built sandbox testing, transaction history and request logs.",
       "Extracted a major feature area from a production monorepo into its own standalone app, with zero disruption.",
@@ -63,10 +64,17 @@ export const experience: ExperienceEntry[] = [
     start: "Oct 2022",
     end: "Dec 2022",
     location: "Lagos, Nigeria",
+    link: "https://drive.google.com/file/d/1KrOYJFWAoNrY6xkmuc6u1InRvBc7Bxnl/view?usp=drive_link",
+    linkLabel: "View certificate",
     badge: "Finalist",
     highlights: [
-      "Collaborated with developers, designers and product managers to ship a full web application.",
-      "Independently delivered a set of tasks across Next.js, React, Material UI, Styled Components, Chakra UI and CSS.",
+      "Advanced through every elimination stage of the program on solo builds, working across Next.js, React, Material UI, Styled Components, Chakra UI and CSS.",
+      "Collaborated with developers, designers and product managers to ship Street Rates, a currency exchange rate web application built by a distributed team of contributors.",
+      "Delivered two complete features on Street Rates: a five-section partnerships page and a complaint submission flow wired to REST endpoints with axios.",
+      "Selected for a small team to build the cohort's showcase site in Next.js, a directory publishing every project from the internship with its live link, contributing roughly a quarter of its commits and owning the shared layout, navigation and footer the rest of the team built inside.",
+      "Held merge access on that team, reviewing and merging pull requests from other contributors into the shared codebase.",
+      "Contributed to Zuri Chat, an open-source Slack-style workspace app already in active development, shipping channel description editing that merged upstream after review from two maintainers.",
+      "Worked ticketed tasks in Linear on Street Rates, resolving merge conflicts as shared branch updates landed on top of in-progress feature work.",
       "Completed the program as a finalist.",
     ],
   },
@@ -76,20 +84,25 @@ export const experience: ExperienceEntry[] = [
     start: "Jul 2022",
     end: "Jul 2022",
     // link: "https://lyful.netlify.app/",
+    link: "https://drive.google.com/file/d/132FfRYORJqNtwrF3x3I19pf34zNLiNl_/view?usp=sharing",
+    linkLabel: "View certificate",
     badge: "Finalist",
     highlights: [
-      "Built the sign-up, login and BMI calculator flows, plus features on the homepage and search page, as part of a four-person team.",
-      "Implemented user authentication and authorization with the Firebase API.",
+      "Bootstrapped the project's Next.js and Tailwind CSS setup and built most of the app's pages, as part of a four-person team.",
+      "Built sign-up and login with Firebase authentication, including the auth context managing session state across the app.",
+      "Built the BMI calculator and its results page, including a custom dropdown component.",
+      "Built a doctor search feature and dashboard, complete with its own sidebar and layout.",
     ],
   },
   {
     company: "Quales Consulting",
     role: "Frontend Developer · Freelance",
     start: "Dec 2021",
-    end: "Apr 2022",
+    end: "Jun 2022",
     // link: "https://www.quales.tech/",
     highlights: [
-      "Refurbished an existing company website end-to-end and layered in new features to make it more interactive.",
+      "Refurbished a software testing company's marketing site, updating content across the homepage, learning and consulting pages against client specs.",
+      "Built a custom auto-scrolling partner slider and a read-more/read-less content toggle in vanilla JavaScript to make the homepage more interactive.",
     ],
   },
 ];
