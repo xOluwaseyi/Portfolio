@@ -31,7 +31,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Maxxconnection · iExplore",
-    role: "Frontend Developer",
+    role: "Frontend Engineer",
     start: "Oct 2023",
     end: "Dec 2024",
     location: "Lagos, Nigeria",
