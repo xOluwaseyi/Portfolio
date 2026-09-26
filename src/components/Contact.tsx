@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import {
   FaGithub,
@@ -9,6 +10,8 @@ import {
   FaArrowUpRightFromSquare,
 } from "react-icons/fa6";
 import { site } from "@/data/site";
+
+type FormStatus = "idle" | "submitting" | "success" | "error";
 
 const links = [
   {
@@ -45,6 +48,124 @@ const fadeUp = {
     transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] as const },
   }),
 };
+
+const inputClasses =
+  "w-full rounded-xl border border-border bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent/50";
+const labelClasses = "mb-1.5 block text-xs font-medium text-muted";
+
+function ContactForm() {
+  const [status, setStatus] = useState<FormStatus>("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("submitting");
+    const form = e.currentTarget;
+
+    try {
+      const res = await fetch(site.formspreeEndpoint, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  return (
+    <motion.form
+      onSubmit={handleSubmit}
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      custom={0.26}
+      className="mx-auto mt-9 max-w-xl text-left"
+    >
+      {/* honeypot field, hidden from real visitors, filters basic spam bots */}
+      <input
+        type="text"
+        name="_gotcha"
+        tabIndex={-1}
+        autoComplete="off"
+        className="hidden"
+        aria-hidden="true"
+      />
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label htmlFor="name" className={labelClasses}>
+            Name
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Your name"
+            className={inputClasses}
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className={labelClasses}>
+            Email
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="you@email.com"
+            className={inputClasses}
+          />
+        </div>
+      </div>
+
+      <div className="mt-4">
+        <label htmlFor="message" className={labelClasses}>
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows={4}
+          placeholder="Your message"
+          className={`${inputClasses} resize-none`}
+        />
+      </div>
+
+      <div className="mt-5 flex flex-wrap items-center justify-center gap-4">
+        <button
+          type="submit"
+          disabled={status === "submitting"}
+          className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5 hover:shadow-[0_12px_40px_-12px_rgba(45,212,191,0.6)] disabled:pointer-events-none disabled:opacity-60"
+        >
+          {status === "submitting" ? "Sending..." : "Send message"}
+          {status !== "submitting" && <FaArrowUpRightFromSquare size={12} />}
+        </button>
+
+        {status === "success" && (
+          <p className="text-sm text-accent">
+            Thanks! I&apos;ll get back to you soon.
+          </p>
+        )}
+        {status === "error" && (
+          <p className="text-sm text-red-400">
+            Something went wrong. Try emailing me directly instead.
+          </p>
+        )}
+      </div>
+    </motion.form>
+  );
+}
 
 export default function Contact() {
   return (
@@ -88,22 +209,7 @@ export default function Contact() {
             chat about building better interfaces. My inbox is open.
           </motion.p>
 
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={0.26}
-            className="mt-9"
-          >
-            <a
-              href={`mailto:${site.email}`}
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5 hover:shadow-[0_12px_40px_-12px_rgba(45,212,191,0.6)]"
-            >
-              Say hello
-              <FaArrowUpRightFromSquare size={12} />
-            </a>
-          </motion.div>
+          <ContactForm />
 
           <motion.div
             variants={fadeUp}

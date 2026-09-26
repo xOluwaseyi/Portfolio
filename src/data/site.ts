@@ -9,11 +9,12 @@ export const site = {
   github: "https://github.com/xoluwaseyi",
   linkedin: "https://www.linkedin.com/in/oluwaseyifagbemi",
   blog: "https://xoluwaseyi.hashnode.dev/",
+  formspreeEndpoint: "https://formspree.io/f/mkjgqybp",
   navLinks: [
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
-    { label: "Education", href: "#education" },
     { label: "Skills", href: "#skills" },
+    { label: "Education", href: "#education" },
     { label: "Contact", href: "#contact" },
   ],
 };
