@@ -71,10 +71,7 @@ export default function Hero() {
             custom={0.2}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
           >
-            {site.tagline} I have a track record across React, Next.js and
-            TypeScript products, from translating Figma designs into
-            production UI to integrating APIs and shipping features teams
-            actually rely on.
+            I build fast, accessible web experiences with React, Next.js and TypeScript, from Figma to production. I also work alongside AI coding tools to move faster, without losing ownership of architecture and code quality.
           </motion.p>
 
           <motion.div
