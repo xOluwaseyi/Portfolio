@@ -4,7 +4,7 @@
 
 🌐 Live at [seyifagbemi.me](https://seyifagbemi.me)
 
-👨🏽‍💻 I'm a Frontend Developer, open to new opportunities.
+👨🏽‍💻 I'm a Frontend Engineer, open to new opportunities.
 
 📬 Reach me at **seyifagbemi211@gmail.com**.
 

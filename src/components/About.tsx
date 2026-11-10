@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 
 const paragraphs = [
-  "Frontend Developer with 4+ years of experience turning designs into interactive, accessible web experiences, both independently and as part of a team.",
+  "Frontend Engineer with 4+ years of experience turning designs into interactive, accessible web experiences, both independently and as part of a team.",
   "I care about the small details that make an interface feel right, communicate clearly with designers and engineers, and enjoy picking up new tools as projects call for them.",
 ];
 

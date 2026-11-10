@@ -2,7 +2,7 @@ export const site = {
   name: "Oluwaseyi Fagbemi",
   firstName: "Oluwaseyi",
   lastName: "Fagbemi",
-  role: "Frontend Developer",
+  role: "Frontend Engineer",
   tagline:
     "I build fast, accessible and polished web experiences, turning designs into interfaces people enjoy using.",
   email: "seyifagbemi211@gmail.com",

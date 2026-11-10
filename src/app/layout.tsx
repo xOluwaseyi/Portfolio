@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Oluwaseyi Fagbemi · Frontend Developer",
+  title: "Oluwaseyi Fagbemi · Frontend Engineer",
   description:
-    "Portfolio of Oluwaseyi Fagbemi, a Frontend Developer crafting fast, accessible and polished web experiences with React, Next.js and TypeScript.",
+    "Portfolio of Oluwaseyi Fagbemi, a Frontend Engineer crafting fast, accessible and polished web experiences with React, Next.js and TypeScript.",
   keywords: [
     "Oluwaseyi Fagbemi",
-    "Frontend Developer",
+    "Frontend Engineer",
     "React Developer",
     "Next.js",
     "TypeScript",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Oluwaseyi Fagbemi · Frontend Developer",
+    title: "Oluwaseyi Fagbemi · Frontend Engineer",
     description:
-      "Portfolio of Oluwaseyi Fagbemi, a Frontend Developer crafting fast, accessible and polished web experiences.",
+      "Portfolio of Oluwaseyi Fagbemi, a Frontend Engineer crafting fast, accessible and polished web experiences.",
     siteName: "Oluwaseyi Fagbemi",
     type: "website",
   },

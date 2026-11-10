@@ -20,7 +20,7 @@ export const experience: ExperienceEntry[] = [
     location: "United Kingdom (Remote)",
     // badge: "Current",
     highlights: [
-      "Worked as lead frontend developer across client projects including a food-delivery admin dashboard and a Web3 payments developer portal, built with Next.js, React and TypeScript.",
+      "Worked as lead frontend engineer across client projects including a food-delivery admin dashboard and a Web3 payments developer portal, built with Next.js, React and TypeScript.",
       "Used AI coding assistants to accelerate delivery across both projects, while owning architecture decisions, code review, and final implementation quality.",
       "Owned the developer portal’s core features end-to-end, building API key management, webhooks, billing, sandbox testing, transaction history, and request logs from scratch.",
       "Extracted a major feature area from a production monorepo into its own standalone app, with zero disruption.",
@@ -43,7 +43,7 @@ export const experience: ExperienceEntry[] = [
     end: "Dec 2024",
     location: "Lagos, Nigeria",
     highlights: [
-      "Worked as lead frontend developer on a multi-portal web platform comprising a marketing site, customer-facing app, business portal, and admin dashboard, built with a modern React-based framework and TypeScript.",
+      "Worked as lead frontend engineer on a multi-portal web platform comprising a marketing site, customer-facing app, business portal, and admin dashboard, built with a modern React-based framework and TypeScript.",
       "Converted Figma designs into pixel-accurate, fully responsive layouts across mobile, tablet, and desktop for 30+ pages.",
       "Built a shared library of custom UI components reused across all four portals for visual and behavioral consistency.",
       "Implemented end-to-end authentication flows (signup, login, OTP verification, password recovery) for multiple user roles, integrating with backend REST APIs and managing secure token-based sessions.",
@@ -59,7 +59,7 @@ export const experience: ExperienceEntry[] = [
     location: "Lagos, Nigeria",
     link: "https://safeticha.com/",
     highlights: [
-      "Joined as the founding frontend developer.",
+      "Joined as the founding frontend engineer.",
       "Translated early wireframes into a production-ready UI using React and Material UI.",
       "Established the component and design foundations the platform's codebase still reflects today.",
       "Integrated internal REST APIs across two dashboards, owning data fetching and UI state management with Redux and RTK, in close collaboration with a backend engineer.",

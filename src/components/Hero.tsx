@@ -60,7 +60,7 @@ export default function Hero() {
             className="mt-4 text-4xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           >
             Oluwaseyi Fagbemi,{" "}
-            <span className="text-gradient">Frontend Developer</span> crafting
+            <span className="text-gradient">Frontend Engineer</span> crafting
             interfaces people enjoy using.
           </motion.h1>
 
